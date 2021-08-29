@@ -14,7 +14,7 @@ The weather data is given in a sqlite file, _hawaii.sqlite_. We used _Pandas_ to
 
 #### **Deliverable 1: Extract temperature data for June**
 
-We are provided with eight years (2010 - 2017) of weather data in a SQLite file. We extracted the daily temperature observation (_tobs_) data taken by different weather stations throughout the year and filtered the data for June. After creating a dataframe we calculated a summary statistics as shown in Fig 1 below. The data shows the average June temperature is close to the median temperature. The temperature is not skewed, while there are hot days (85 $^\circ$ maximum) and cold days (64 $^\circ$ ). There is not much variation in the temperature. A cold day of 64 $^\circ$ is unusual for June. This could be an error in the reading by one weather station, or it could also be an unusally cold summer day in one year. We need to investigate this more. 
+We are provided with eight years (2010 - 2017) of weather data in a SQLite file. We extracted the daily temperature observation (_tobs_) data taken by different weather stations throughout the year and filtered the data for June. After creating a dataframe we calculated a summary statistics as shown in Fig 1 below. The data shows the average June temperature is close to the median temperature. The temperature is not skewed, while there are hot days (85&deg; maximum) and cold days (64&deg; ). There is not much variation in the temperature. A cold day of 64&deg; is unusual for June. This could be an error in the reading by one weather station, or it could also be an unusally cold summer day in one year. We need to investigate this more. 
 
 <img src = 'Resources/June_temp_stats.png'>
 
@@ -22,7 +22,7 @@ We are provided with eight years (2010 - 2017) of weather data in a SQLite file.
 
 #### **Deliverable 2: Extract temperature data for December**
 
-We filtered the data for December from the seven years (2010 - 2016). There is no data from December on 2017. We filtered the data for December the same way we filtered the data for June. The summary statistics is shown in Fig 2. The mean and the median temperature is almost the same again. The temperature is not skewed. There are some unusual temperature reading, such as 83 $^\circ$ in December. This could be due to an error or this could be a hot day in December. 
+We filtered the data for December from the seven years (2010 - 2016). There is no data from December on 2017. We filtered the data for December the same way we filtered the data for June. The summary statistics is shown in Fig 2. The mean and the median temperature is almost the same again. The temperature is not skewed. There are some unusual temperature reading, such as 83&deg; in December. This could be due to an error or this could be a hot day in December. 
 
 <img src = 'Resources/Dec_temp_stats.png'>
 
@@ -55,10 +55,10 @@ Precipitation is also a concern for W. Avy since a previous surf shop went of bu
 
 W. Avy wanted to know the temperature trend for June and December from the data he provided us. The analysis shows that the average temperature is mostly stable in Oahu, while summer is a couple of degrees warmer than winter as expected. The summary of Deliverables 1 and 2 are given below.
 
-- **Deliverable 1**: The average June temperature is 74.94 $^\circ$  with a standard deviation of 3.26 $^\circ$. The median temperature is 75.00 $^\circ$. The plot in Fig 3 shows that the June temperature is stable and the small variation should not be an issue for the _Surf n' Shake_ shop.
+- **Deliverable 1**: The average June temperature is 74.94 &deg;  with a standard deviation of 3.26&deg;. The median temperature is 75.00 &deg;. The plot in Fig 3 shows that the June temperature is stable and the small variation should not be an issue for the _Surf n' Shake_ shop.
 
-- **Deliverable 2**: The average December temperature is 71.04 $^\circ$ with a standard deviation of 3.75 $^\circ$ . The median temperature is 71.00 $^\circ$ . The temperature is stable for most of the time near 71 $^\circ$ . 
+- **Deliverable 2**: The average December temperature is 71.04&deg; with a standard deviation of 3.75&deg; . The median temperature is 71.00&deg; . The temperature is stable for most of the time near 71&deg; . 
 
-- **Comparing June and December Temperature Data**: The temperature in June is usually stable. The upper (75%) and lower (25%) quartile of June temperature are 73.00 $^\circ$ and 77 $^\circ$ respectively. This two degrees spread is very small to have a temperature related issue with keeping the shop opened. The December temperature has more spread compared to June. The upper and lower quartiles are 74.00 $^\circ$ and 69.00 $^\circ$ repectively. A five degrees of temperature spread should not be an issue for the shop either. 
+- **Comparing June and December Temperature Data**: The temperature in June is usually stable. The upper (75%) and lower (25%) quartile of June temperature are 73.00&deg; and 77&deg; respectively. This two degrees spread is very small to have a temperature related issue with keeping the shop opened. The December temperature has more spread compared to June. The upper and lower quartiles are 74.00&deg; and 69.00&deg; repectively. A five degrees of temperature spread should not be an issue for the shop either. 
 
 **Futher Study:**  W. Avy is concerened about the temperature effect on opening the _Surf n' Shake_ shop. The temperature seems to be stable in Oahu. Another factor that needs to be considered is the precipitation in Oahu. I looked at the June and December precipation. The precipitation is not too much for most years in June and December. More precipitation study needs to be done, especially since W. Avy's first ice cream shop venture failed due to too much rain in that area. Other months of the year could have more rain. As we studied the data (not asked in the deliverables) we found that there was 6.70 inches of rain during one of the days between Aug 24, 2016 and Aug 23, 2017. A scatter plot of all the precipitation vs. temperature data would give a summary of the variations of each month that might effect the success of the business. Within the scatter plot, a low temperature or high precipitation would result in days of low customer activities.
